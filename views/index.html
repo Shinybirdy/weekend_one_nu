@@ -8,18 +8,34 @@
   </head>
   <body>
     <h1>Tracey Town Super Employee Earnings Tracker</h1>
-      <h5>First Name:<input type ="text" id = "firstName" value= "First Name"/> <br />
-          Last Name:<input type ="text" id = "lastName" value= "Last Name"/><br />
-          ID:<input type = "number" id = "empId" value= "Id" /><br />
-          Job Title:<input type ="text" id = "jobTitle" value= "title" /><br />
-          Annual Salary:<input type="number" id = "annSalary" value= "Annual Salary" /><br />
-      </h5>
-      <button type="button" name="button" onclick="addEmp()" >Add Employee</button>
 
-    <div id="employee"></div>
+  <form>
+   First name:
+   <input type ="text" id = "firstName" value = ""/>
+   Last name:<input type="text" id="lastName" value = ""/>
+   ID:<input type = "number" id = "empId" value= "" />
+   Job Title:<select name="jobs" id = "jobTitle">
 
+     <option value="bossQueen">BossQueen</option>
+     <option value="knight">Knight</option>
+     <option value="stableman">Stableman</option>
+     <option value="jester">Jester</option>
+   </select>
+   Annual Salary:
+   <input type="number" id = "annSalary" value= ""/>
+
+   <button type="button" name="button" onclick="addEmp()" >Add Employee</button>
+
+</form>
+
+
+  <p>Employee List:</p>
+  <p id="employeeList"></p>
     <div id = "salaryTotal">
+<h5>Total Annual Salaries:</h5>
+<p id="bigMoney"></p>
 
+<h3 id="monthlySalaryTotal">Salary Cost per Month: </h3>
     </div>
 
   </body>
