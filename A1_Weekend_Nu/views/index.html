@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="../scripts/happiness.js"></script>
+    <link rel="stylesheet" type="text/css" href="../stylz/prettiness.css" />
+    <title>Tracey Town Super Employee Earnings Tracker</title>
+  </head>
+  <body>
+    <h1>Tracey Town Super Employee Earnings Tracker</h1>
+
+  <form>
+   First name:
+   <input type ="text" id = "firstName" value = ""/>
+   Last name:<input type="text" id="lastName" value = ""/>
+   ID:<input type = "number" id = "empId" value= "" />
+   Job Title:<select name="jobs" id = "jobTitle">
+
+     <option value="BossQueen">BossQueen</option>
+     <option value="Knight">Knight</option>
+     <option value="Stableman">Stableman</option>
+     <option value="Jester">Jester</option>
+   </select>
+   Annual Salary:
+   <input type="number" id = "annSalary" value= ""/>
+
+   <button type="button" name="button" onclick="addEmp()" >Add Employee</button>
+
+  </form>
+
+
+  <p>Employee List:</p>
+  <p id="employeeList"></p>
+
+
+  <p>Total Annual Salaries:</p>
+  <p id="bigMoney"></p>
+
+  <p>Salary Cost per Month: </p>
+  <p id="monthlySalaryTotal"></p>
+
+
+
+
+  </body>
+</html>
